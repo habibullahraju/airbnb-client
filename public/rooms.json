@@ -1,0 +1,735 @@
+[
+    {
+      "location": "New York City, USA",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826134718441577316/original/da0692f3-d54d-4af4-a35e-75e2f6aee135.jpeg",
+      "category": "Iconic Cities",
+      "dateRange": "Mar 5, 2024 - Mar 10, 2024",
+      "price": 180,
+      "rating": 4.6,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "3"
+      }
+    },
+    {
+      "location": "Miami, Florida",
+      "image": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-820520157064814809/original/e547fb1f-49e5-4dbf-ba95-7cd69b462082.jpeg",
+      "category": "Pools",
+      "dateRange": "May 20, 2024 - May 25, 2024",
+      "price": 280,
+      "rating": 4.7,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4"
+      }
+    },
+    {
+      "location": "Granada",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-625834957877264062/original/b66ffb16-8b94-4aea-912f-ef2d8e32f781.jpeg",
+      "category": "Caves",
+      "dateRange": "Sep 18, 2024 - Sep 25, 2024",
+      "price": 120,
+      "rating": 4.3,
+      "propertyType": "Apartment",
+      "beds": 1,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "2"
+      }
+    },
+    {
+      "location": "Bali, Indonesia",
+      "image": "https://a0.muscache.com/im/pictures/e25a9b25-fa98-4160-bfd1-039287bf38b6.jpg",
+      "category": "Tropical",
+      "dateRange": "Apr 8, 2024 - Apr 15, 2024",
+      "price": 180,
+      "rating": 4.6,
+      "propertyType": "Home",
+      "beds": 2,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "2"
+      }
+    },
+    {
+      "location": "Sydney, Australia",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-13903824/original/82d996fb-d7c4-46a8-a713-febd281cd69f.jpeg",
+      "category": "Rooms",
+      "dateRange": "May 10, 2024 - May 16, 2024",
+      "price": 320,
+      "rating": 4.8,
+      "propertyType": "Apartment",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4",
+        "infants": "1"
+      }
+    },
+    {
+      "location": "Edinburgh, UK",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-47086741/original/89035847-1f96-4269-af1e-120a19e1cfd7.jpeg",
+      "category": "Castles",
+      "dateRange": "Aug 8, 2024 - Aug 14, 2024",
+      "price": 600,
+      "rating": 4.9,
+      "propertyType": "Home",
+      "beds": 8,
+      "bedrooms": 5,
+      "holdingCapacity": {
+        "guests": "10",
+        "infants": "5",
+        "pets": "3"
+      }
+    },
+    {
+      "location": "Venice, Italy",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-893792005435547218/original/56d5a012-a5a4-440d-a920-7c53af7d4d73.jpeg",
+      "category": "Beach",
+      "dateRange": "Mar 10, 2025 - Mar 16, 2025",
+      "price": 300,
+      "rating": 4.7,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "7",
+        "infants": "4"
+      }
+    },
+    {
+      "location": "Phuket, Thailand",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-609058549221901378/original/ca4f102d-b152-4adb-99d3-b34915c45f36.jpeg",
+      "category": "Beach",
+      "dateRange": "Jun 12, 2025 - Jun 18, 2025",
+      "price": 320,
+      "rating": 4.9,
+      "propertyType": "Home",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4",
+        "infants": "1"
+      }
+    },
+    {
+      "location": "City Center Loft",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-721540609203378406/original/9dfaf7d6-40f2-4673-b468-7c5ab3147f86.jpeg",
+      "category": "Iconic Cities",
+      "dateRange": "Mar 5, 2024 - Mar 10, 2024",
+      "price": 180,
+      "rating": 4.6,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "3"
+      }
+    },
+    {
+      "location": "San Francisco, USA",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-26300485/original/ee94e6c1-6ebc-496e-af84-1502edd1b759.jpeg",
+      "category": "Rooms",
+      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+      "price": 585,
+      "rating": 4.2,
+      "propertyType": "Apartment",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "5"
+      }
+    },
+    {
+      "location": "Hawaii, USA",
+      "image": "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg",
+      "category": "Tropical",
+      "dateRange": "Feb 15, 2024 - Feb 20, 2024",
+      "price": 220,
+      "rating": 4.8,
+      "propertyType": "Home",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4",
+        "infants": "2",
+        "pets": "1"
+      }
+    },
+    {
+      "location": "Edinburgh, UK",
+      "image": "https://a0.muscache.com/im/pictures/16741847/6cdb4377_original.jpg",
+      "category": "Castles",
+      "dateRange": "Jul 14, 2024 - Jul 20, 2024",
+      "price": 550,
+      "rating": 4.9,
+      "propertyType": "Home",
+      "beds": 10,
+      "bedrooms": 7,
+      "holdingCapacity": {
+        "guests": "12",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Santorini",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-742424658135898180/original/ef5464ea-5eb8-426a-a097-a4ed7a395610.jpeg",
+      "category": "Rooms",
+      "dateRange": "Apr 5, 2025 - Apr 12, 2025",
+      "price": 250,
+      "rating": 4.8,
+      "propertyType": "Home",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "7",
+        "infants": "2"
+      }
+    },
+    {
+      "location": "Los Angeles, USA",
+      "image": "https://a0.muscache.com/im/pictures/f90c7282-5195-41c0-876f-ccbd34628560.jpg",
+      "category": "Countryside",
+      "dateRange": "May 9, 2025 - May 15, 2025",
+      "price": 190,
+      "rating": 4.6,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "3"
+      }
+    },
+    {
+      "location": "Lucerne, Switzerland",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-939010158951044220/original/d22a4047-f19b-4578-ad81-c3e9cb5b9ce9.jpeg",
+      "category": "Pools",
+      "dateRange": "Jul 10, 2025 - Jul 17, 2025",
+      "price": 260,
+      "rating": 4.7,
+      "propertyType": "Apartment",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4"
+      }
+    },
+    {
+      "location": "Manchester, UK",
+      "image": "https://a0.muscache.com/im/pictures/94506c67-5f73-403a-9946-b5c054a82e55.jpg",
+      "category": "Castles",
+      "dateRange": "Sep 10, 2025 - Sep 16, 2025",
+      "price": 630,
+      "rating": 4.9,
+      "propertyType": "Home",
+      "beds": 9,
+      "bedrooms": 5,
+      "holdingCapacity": {
+        "guests": "11",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Lake Tahoe",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-824274983452380073/original/ded7d0e5-9acd-4e36-9b5d-dacc397e3c82.jpeg",
+      "category": "Lake",
+      "dateRange": "Aug 3, 2024 - Aug 9, 2024",
+      "price": 300,
+      "rating": 4.6,
+      "propertyType": "Home",
+      "beds": 5,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6",
+        "infants": "2"
+      }
+    },
+    {
+      "location": "Tuscany",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-28423376/original/98ad56bf-29aa-4192-ab67-c7fbfaeae3ab.jpeg",
+      "category": "Countryside",
+      "dateRange": "Jun 8, 2024 - Jun 15, 2024",
+      "price": 400,
+      "rating": 4.5,
+      "propertyType": "Home",
+      "beds": 6,
+      "bedrooms": 4,
+      "holdingCapacity": {
+        "guests": "8"
+      }
+    },
+    {
+      "location": "Provence",
+      "image": "https://a0.muscache.com/im/pictures/50efdbbe-a601-43f9-a0ad-91e71634b413.jpg",
+      "category": "Countryside",
+      "dateRange": "Jul 20, 2024 - Jul 26, 2024",
+      "price": 380,
+      "rating": 4.7,
+      "propertyType": "Home",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6"
+      }
+    },
+    {
+      "location": "Tuscany",
+      "image": "https://a0.muscache.com/im/pictures/9d7adbe9-ec95-4351-b511-932d83070667.jpg",
+      "category": "Countryside",
+      "dateRange": "May 18, 2025 - May 25, 2025",
+      "price": 420,
+      "rating": 4.8,
+      "propertyType": "Home",
+      "beds": 5,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6",
+        "infants": "3"
+      }
+    },
+    {
+      "location": "Nottingham, UK",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-35538426/original/347f2682-6824-410c-82b7-7b04489b8a94.jpeg",
+      "category": "Castles",
+      "dateRange": "Jun 8, 2025 - Jun 14, 2025",
+      "price": 650,
+      "rating": 4.9,
+      "propertyType": "Home",
+      "beds": 9,
+      "bedrooms": 6,
+      "holdingCapacity": {
+        "guests": "12",
+        "infants": "5",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Maui",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826026275336075487/original/eece08d6-6178-4c4b-855a-d3440889bbd9.jpeg",
+      "category": "Tropical",
+      "dateRange": "Feb 10, 2026 - Feb 17, 2026",
+      "price": 210,
+      "rating": 4.6,
+      "propertyType": "Home",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4"
+      }
+    },
+    {
+      "location": "Lake Tahoe",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-913667916386756155/original/93795580-f0ad-4177-b48e-a3a6096ec3e0.jpeg",
+      "category": "Lake",
+      "dateRange": "Oct 8, 2025 - Oct 14, 2025",
+      "price": 420,
+      "rating": 4.7,
+      "propertyType": "Home",
+      "beds": 5,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "7",
+        "infants": "3"
+      }
+    },
+    {
+      "location": "Whistler",
+      "image": "https://a0.muscache.com/im/pictures/2929d32f-83d6-4d7e-bc0b-670fc8db1e06.jpg",
+      "category": "Skiing",
+      "dateRange": "Dec 2, 2024 - Dec 8, 2024",
+      "price": 550,
+      "rating": 4.7,
+      "propertyType": "Home",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6"
+      }
+    },
+    {
+      "location": "Tokyo, Japan",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-874686035326211853/original/ce3819b6-38cc-43b7-98b1-d0583a999752.jpeg",
+      "category": "Iconic Cities",
+      "dateRange": "Jan 7, 2025 - Jan 13, 2025",
+      "price": 230,
+      "rating": 4.6,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "4",
+        "infants": "2",
+        "pets": "1"
+      }
+    },
+    {
+      "location": "London, UK",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-892636584500492829/original/c45bf8cf-2ad6-4930-8c9f-f6f3c992aedd.jpeg",
+      "category": "Iconic Cities",
+      "dateRange": "Jan 6, 2026 - Jan 12, 2026",
+      "price": 240,
+      "rating": 4.7,
+      "propertyType": "Apartment",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "3"
+      }
+    },
+    {
+      "location": "Lakeview Cabin",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-604734191169364452/original/d1ce1236-c925-4f4d-b30d-26f01ebefe78.jpeg",
+      "category": "Lake",
+      "dateRange": "Aug 3, 2024 - Aug 9, 2024",
+      "price": 280,
+      "rating": 4.6,
+      "propertyType": "Guesthouse",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "5"
+      }
+    },
+    {
+      "location": "Miami, Florida",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-948238209740182923/original/45fd0d30-d2b8-4028-b7d5-646397898b12.jpeg",
+      "category": "Pools",
+      "dateRange": "Jun 5, 2024 - Jun 12, 2024",
+      "price": 250,
+      "rating": 4.6,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4"
+      }
+    },
+    {
+      "location": "Chicago, USA",
+      "image": "https://a0.muscache.com/im/pictures/ad93f873-ae5f-4f48-a194-4b618b7d81b9.jpg",
+      "category": "Pools",
+      "dateRange": "Apr 14, 2025 - Apr 21, 2025",
+      "price": 270,
+      "rating": 4.6,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "6",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Rio de Janeiro",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-896715066253376414/original/d6d1932c-3d2c-49ab-bf6f-a912c4d7fc92.jpeg",
+      "category": "Beach",
+      "dateRange": "Mar 8, 2025 - Mar 14, 2025",
+      "price": 880,
+      "rating": 4.7,
+      "propertyType": "Apartment",
+      "beds": 10,
+      "bedrooms": 7,
+      "holdingCapacity": {
+        "guests": "9",
+        "infants": "3",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Rustic Countryside",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-746169942958422044/original/0506f135-6018-4695-bc7c-6bddfc729698.jpeg",
+      "category": "Countryside",
+      "dateRange": "Jun 8, 2024 - Jun 15, 2024",
+      "price": 150,
+      "rating": 4.5,
+      "propertyType": "Home",
+      "beds": 2,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "3"
+      }
+    },
+    {
+      "location": "Cozy Cave Retreat",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-52726789/original/f1409b1b-18c0-46f7-8964-81233c7913fe.jpeg",
+      "category": "Caves",
+      "dateRange": "Sep 18, 2024 - Sep 25, 2024",
+      "price": 110,
+      "rating": 4.3,
+      "propertyType": "Home",
+      "beds": 1,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "2"
+      }
+    },
+    {
+      "location": "Geneva, Switzerland",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-805000320485419560/original/dc789b22-7ff2-401a-8672-f9887eba1091.jpeg",
+      "category": "Lake",
+      "dateRange": "Jul 12, 2025 - Jul 18, 2025",
+      "price": 380,
+      "rating": 4.7,
+      "propertyType": "Home",
+      "beds": 5,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "7"
+      }
+    },
+    {
+      "location": "Cappadocia",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-880944583187711526/original/fbd656a0-9091-4af8-a146-9c1389c79b4f.jpeg",
+      "category": "Caves",
+      "dateRange": "Aug 6, 2025 - Aug 12, 2025",
+      "price": 170,
+      "rating": 4.5,
+      "propertyType": "Apartment",
+      "beds": 6,
+      "bedrooms": 4,
+      "holdingCapacity": {
+        "guests": "6",
+        "infants": "2"
+      }
+    },
+    {
+      "location": "Ski Chalet Getaway",
+      "image": "https://a0.muscache.com/im/pictures/14453d45-9d7e-44cb-b910-da820008a4d0.jpg",
+      "category": "Skiing",
+      "dateRange": "Dec 5, 2024 - Dec 12, 2024",
+      "price": 420,
+      "rating": 4.8,
+      "propertyType": "Guesthouse",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6",
+        "infants": "3",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Urban Loft, Manhattan",
+      "image": "https://a0.muscache.com/im/pictures/airflow/Hosting-1112254/original/e6bed0e6-6190-4119-bd80-d12d369cea19.jpg",
+      "category": "Rooms",
+      "dateRange": "Oct 1, 2025 - Oct 7, 2025",
+      "price": 180,
+      "rating": 4.6,
+      "propertyType": "Home",
+      "beds": 1,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "2"
+      }
+    },
+    {
+      "location": "Paris, France",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-853597984900485312/original/6feb6fa2-ad93-4b0f-953a-e6aa51f6f47c.jpeg",
+      "category": "Iconic Cities",
+      "dateRange": "Mar 15, 2024 - Mar 21, 2024",
+      "price": 220,
+      "rating": 4.7,
+      "propertyType": "Apartment",
+      "beds": 2,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "3"
+      }
+    },
+    {
+      "location": "Malibu",
+      "image": "https://a0.muscache.com/im/pictures/38e6a196-2cff-4f80-9f51-968969eb8ba2.jpg",
+      "category": "Beach",
+      "dateRange": "Apr 12, 2024 - Apr 18, 2024",
+      "price": 350,
+      "rating": 4.9,
+      "propertyType": "Home",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6",
+        "infants": "2"
+      }
+    },
+    {
+      "location": "Lake Como",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-46890950/original/398e7622-48f8-47a8-a808-d047c9bea3fb.jpeg",
+      "category": "Lake",
+      "dateRange": "Sep 14, 2024 - Sep 20, 2024",
+      "price": 420,
+      "rating": 4.8,
+      "propertyType": "Home",
+      "beds": 6,
+      "bedrooms": 4,
+      "holdingCapacity": {
+        "guests": "8"
+      }
+    },
+    {
+      "location": "Bern, Switzerland",
+      "image": "https://a0.muscache.com/im/pictures/ae558b5c-6444-4cfa-b096-a1e5eae635ba.jpg",
+      "category": "Caves",
+      "dateRange": "Oct 6, 2024 - Oct 12, 2024",
+      "price": 150,
+      "rating": 4.5,
+      "propertyType": "Apartment",
+      "beds": 1,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "7",
+        "infants": "3"
+      }
+    },
+    {
+      "location": "Phuket, Thailand",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-44970955/original/d289282f-31ce-41bd-9364-2cc8ab021b6d.jpeg",
+      "category": "Tropical",
+      "dateRange": "Feb 11, 2025 - Feb 18, 2025",
+      "price": 200,
+      "rating": 4.5,
+      "propertyType": "Home",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4"
+      }
+    },
+    {
+      "location": "Aspen, Colorado",
+      "image": "https://a0.muscache.com/im/pictures/d12bc9ab-d5f5-41d8-a701-e107b774d521.jpg",
+      "category": "Skiing",
+      "dateRange": "Dec 10, 2025 - Dec 16, 2025",
+      "price": 590,
+      "rating": 4.8,
+      "propertyType": "Home",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Paradise Villa",
+      "image": "https://a0.muscache.com/im/pictures/7cc3c855-f90e-4d0f-9b13-3b5c2a3c4bad.jpg",
+      "category": "Tropical",
+      "dateRange": "Feb 15, 2024 - Feb 20, 2024",
+      "price": 320,
+      "rating": 4.8,
+      "propertyType": "Guesthouse",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6",
+        "infants": "2",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Beachfront Bungalow",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-609058549221901378/original/ca4f102d-b152-4adb-99d3-b34915c45f36.jpeg",
+      "category": "Beach",
+      "dateRange": "Apr 12, 2024 - Apr 18, 2024",
+      "price": 350,
+      "rating": 4.9,
+      "propertyType": "Guesthouse",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4",
+        "infants": "1"
+      }
+    },
+    {
+      "location": "Medieval Castle",
+      "image": "https://a0.muscache.com/im/pictures/b87046c6-c860-4469-87b5-62b5201f2310.jpg",
+      "category": "Castles",
+      "dateRange": "Jul 14, 2024 - Jul 20, 2024",
+      "price": 550,
+      "rating": 4.9,
+      "propertyType": "Apartment",
+      "beds": 6,
+      "bedrooms": 4,
+      "holdingCapacity": {
+        "guests": "8",
+        "infants": "3"
+      }
+    },
+    {
+      "location": "Aspen, Colorado",
+      "image": "https://a0.muscache.com/im/pictures/28af0024-812b-4fb0-8ad0-90e1ae26ecd6.jpg",
+      "category": "Skiing",
+      "dateRange": "Dec 5, 2024 - Dec 12, 2024",
+      "price": 600,
+      "rating": 4.8,
+      "propertyType": "Home",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "6",
+        "infants": "2",
+        "pets": "2"
+      }
+    },
+    {
+      "location": "Basel, Switzerland",
+      "image": "https://a0.muscache.com/im/pictures/2cccbb8b-5c41-43b9-89d8-93a5cdb070e6.jpg",
+      "category": "Skiing",
+      "dateRange": "Dec 4, 2025 - Dec 10, 2025",
+      "price": 580,
+      "rating": 4.8,
+      "propertyType": "Home",
+      "beds": 4,
+      "bedrooms": 3,
+      "holdingCapacity": {
+        "guests": "9",
+        "infants": "2"
+      }
+    },
+    {
+      "location": "Cappadocia",
+      "image": "https://a0.muscache.com/im/pictures/8c6f9b91-fea5-49c2-bed5-b85607a20f8e.jpg",
+      "category": "Caves",
+      "dateRange": "Nov 5, 2025 - Nov 12, 2025",
+      "price": 160,
+      "rating": 4.6,
+      "propertyType": "Guesthouse",
+      "beds": 1,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "2"
+      }
+    },
+    {
+      "location": "Cozy Cabin Retreat",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg",
+      "category": "Rooms",
+      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+      "price": 120,
+      "rating": 4.2,
+      "propertyType": "Room",
+      "beds": 1,
+      "bedrooms": 1,
+      "holdingCapacity": {
+        "guests": "2"
+      }
+    },
+    {
+      "location": "Poolside Villa",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-52759437/original/4ab74141-6b0e-4a65-b5ba-5fb99591590f.jpeg",
+      "category": "Pools",
+      "dateRange": "May 20, 2024 - May 25, 2024",
+      "price": 280,
+      "rating": 4.7,
+      "propertyType": "Guesthouse",
+      "beds": 3,
+      "bedrooms": 2,
+      "holdingCapacity": {
+        "guests": "4"
+      }
+    }
+  ]
