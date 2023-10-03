@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { FiPlus, FiMinus } from "react-icons/fi";
@@ -10,7 +10,6 @@ AOS.init();
 
 
 const SearchBar = () => {
-
   const [detailNavOption, setDetailNavOption] = useState("")
   const [openDetailNav, setOpenDetailNav] = useState(false)
 
@@ -43,6 +42,13 @@ const SearchBar = () => {
     setInfants(0);
     setPets(0);
   }
+  useEffect(() => {
+    function handleScroll() {
+      setOpenDetailNav(false)
+    }
+    window.addEventListener('scroll', handleScroll);
+    
+  }, []);
   return (
     <div>
       {openDetailNav?<div>
