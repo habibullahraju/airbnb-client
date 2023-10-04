@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { FiPlus, FiMinus } from "react-icons/fi";
@@ -6,52 +6,70 @@ import { format } from "date-fns";
 import DatePicker from "../DatePicker/DatePicker";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ROOMS_CONTEXTS } from "../../provider/RoomsDataProvider";
+import { useNavigate } from "react-router-dom";
 AOS.init();
 
 
 const SearchBar = () => {
   const [detailNavOption, setDetailNavOption] = useState("")
   const [openDetailNav, setOpenDetailNav] = useState(false)
-
+  const { setAllRooms } = useContext(ROOMS_CONTEXTS)
   const [searchLocation, setSearchLocation] = useState('')
   const [adults, setAdults] = useState(0)
   const [children, setChildren] = useState(0)
   const [infants, setInfants] = useState(0)
   const [pets, setPets] = useState(0)
   let guests = adults + children;
-
+  const navigate = useNavigate()
 
   const [dateChanged, setDateChanged] = useState(false)
   const [date, setDate] = useState([{
     startDate: new Date(),
-    endDate: new Date(), 
+    endDate: new Date(),
     key: 'selection'
   }]);
   const checkIn = format(date[0].startDate, 'MMM d, yyyy')
   const checkOut = format(date[0].endDate, 'MMM d, yyyy')
   const dateRange = `${checkIn} - ${checkOut}`
-  console.log(dateRange,detailNavOption);
+
+  if (openDetailNav) {
+    document.body.style.backgroundColor = '#ede6e6'
+  }
+  else {
+    document.body.style.backgroundColor = 'white'
+  }
 
 
-  // const startDate = format(date[0].startDate, 'MMM d')
-  // const endDate = format(date[0].endDate, 'd')
-
-  const handleResetGuest = () =>{
+  const handleResetGuest = () => {
     setAdults(0);
     setChildren(0);
     setInfants(0);
     setPets(0);
   }
+
   useEffect(() => {
     function handleScroll() {
       setOpenDetailNav(false)
     }
+    
     window.addEventListener('scroll', handleScroll);
     
+
   }, []);
+  
+
+  const handleSearch = () => {
+    fetch(`http://localhost:5000/search?location=${searchLocation}&guests=${guests}&infants=${infants}&pets=${pets}&dateRange=${dateRange}`)
+      .then(res => res.json())
+      .then(data => {
+        setAllRooms(data)
+        navigate("/?result")
+      })
+  }
   return (
     <div>
-      {openDetailNav?<div>
+      {openDetailNav ? <div>
         <ul data-aos="zoom-in" data-aos-delay="100" data-aos-duration="100" className="flex  gap-8  pt-3 pb-1">
           <li className="text-gray-800 cursor-pointer pb-2 border-b-2 border-gray-800">
             Stays
@@ -72,8 +90,8 @@ const SearchBar = () => {
             <div
               onClick={() => setDetailNavOption("Anywhere")}
               className={`relative w-1/3 flex flex-col px-5 py-3 rounded-full cursor-pointer ${detailNavOption === "Anywhere"
-                  ? "bg-white shadow-xl"
-                  : "hover:bg-gray-200"
+                ? "bg-white shadow-xl"
+                : "hover:bg-gray-200"
                 }`}
             >
               {detailNavOption === "Anywhere" && searchLocation ? (
@@ -106,8 +124,8 @@ const SearchBar = () => {
             <div
               onClick={() => setDetailNavOption("Check in")}
               className={`px-8 py-3 rounded-full cursor-pointer text-sm ${detailNavOption === "Any Week" || detailNavOption === "Check in"
-                  ? "bg-white shadow-xl"
-                  : "hover:bg-gray-200"
+                ? "bg-white shadow-xl"
+                : "hover:bg-gray-200"
                 }`}
             >
               <p className="font-medium">Check in</p>
@@ -120,8 +138,8 @@ const SearchBar = () => {
             <div
               onClick={() => setDetailNavOption("Check out")}
               className={`px-8 py-3 rounded-full cursor-pointer text-sm ${detailNavOption === "Check out"
-                  ? "bg-white shadow-xl"
-                  : "hover:bg-gray-200"
+                ? "bg-white shadow-xl"
+                : "hover:bg-gray-200"
                 }`}
             >
               <p className="font-medium">Check out</p>
@@ -133,8 +151,8 @@ const SearchBar = () => {
             <div
               onClick={() => setDetailNavOption("Add guests")}
               className={`flex w-1/3 items-center justify-between pl-5 pr-2 py-2.5 rounded-full cursor-pointer text-sm ${detailNavOption === "Add guests"
-                  ? "bg-white shadow-xl"
-                  : "hover:bg-gray-200"
+                ? "bg-white shadow-xl"
+                : "hover:bg-gray-200"
                 }`}
             >
               <div
@@ -163,6 +181,7 @@ const SearchBar = () => {
               </div>
 
               <button
+                onClick={handleSearch}
                 type="button"
                 className="text-white bg-rose-500 hover:bg-rose-600 font-medium rounded-full text-sm p-3 text-center inline-flex gap-2 items-center"
               >
@@ -176,7 +195,6 @@ const SearchBar = () => {
               </button>
             </div>
 
-            {/* dates selections */}
             {detailNavOption === "Any Week" ||
               detailNavOption === "Check in" ||
               detailNavOption === "Check out" ? (
@@ -291,7 +309,7 @@ const SearchBar = () => {
                     <div>
                       <p className="font-semibold text-base mb-1">Pets</p>
                       <p
-                        
+
                         className="text-gray-600 hover:text-gray-800 underline"
                       >
                         Bringing a service animal?
@@ -326,27 +344,27 @@ const SearchBar = () => {
             )}
           </div>
         </div>
-      </div>: <div onClick={()=>setOpenDetailNav(true)} className="md:ml-20" >
-                <div  className='border-[1px] w-full md:w-auto py-[7px] rounded-full shadow hover:shadow-md  transition cursor-pointer'>
-                    <div  className='flex w-full flex-row items-center justify-between'>
-                        <div className='text-sm font-semibold px-5'>Anywhere</div>
+      </div> : <div onClick={() => setOpenDetailNav(true)} className="md:ml-20" >
+        <div className='border-[1px] w-full md:w-auto py-[7px] rounded-full shadow hover:shadow-md  transition cursor-pointer'>
+          <div className='flex w-full flex-row items-center justify-between'>
+            <div className='text-sm font-semibold px-5'>Anywhere</div>
 
-                        <div className=' sm:block text-sm font-semibold px-5 border-x-[1px] flex-1 text-center'>Any week</div>
+            <div className=' sm:block text-sm font-semibold px-5 border-x-[1px] flex-1 text-center'>Any week</div>
 
-                        <div className='text-sm pl-5  pr-2 text-gray-600 flex flex-row items-center gap-3'>
-                            <div className='hidden sm:block'> guests</div>
-                            <div className='p-2 bg-rose-500 rounded-full text-white'>
-                                <BiSearch size={18} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className='text-sm pl-5  pr-2 text-gray-600 flex flex-row items-center gap-3'>
+              <div className='hidden sm:block'> guests</div>
+              <div className='p-2 bg-rose-500 rounded-full text-white'>
+                <BiSearch size={18} />
+              </div>
+            </div>
+          </div>
+        </div>
 
-            </div>}
+      </div>}
 
 
 
-      
+
 
     </div>
   );

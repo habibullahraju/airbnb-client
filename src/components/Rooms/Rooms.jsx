@@ -3,6 +3,7 @@ import Container from "../container/container";
 import Card from "./Card";
 import { useSearchParams } from "react-router-dom";
 import { ROOMS_CONTEXTS } from "../../provider/RoomsDataProvider";
+import Loader from "../Loader/Loader";
 
 
 
@@ -11,7 +12,6 @@ const Rooms = () => {
     
     const [params , setParams] = useSearchParams()
     const categoryValue = params.get('category')
-    console.log(categoryValue);
     useEffect(()=>{
         fetch("http://localhost:5000/all-rooms")
         .then(res => res.json())
@@ -27,16 +27,18 @@ const Rooms = () => {
         
         
      
-    },[categoryValue])
+    },[categoryValue,])
     return (
         <Container>
-            <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 xl:grid-cols-5">
+
+            {allRooms? <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 xl:grid-cols-5">
             {
                 allRooms?.map((room,index)=>(
                     <Card key={index} room={room}></Card>
                 ))
             }
-            </div>
+            </div>: <Loader></Loader>}
+            
         </Container>
     );
 };
