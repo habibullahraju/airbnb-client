@@ -10,14 +10,14 @@ import { BiBed } from 'react-icons/bi'
 import { DiGhostSmall } from 'react-icons/di'
 
 const categoryData = [
-    {
-        label: 'All',
-        icon: DiGhostSmall,
-    },
-    {
-        label: 'Rooms',
-        icon: BiBed,
-    },
+    // {
+    //     label: 'All',
+    //     icon: DiGhostSmall,
+    // },
+    // {
+    //     label: 'Rooms',
+    //     icon: BiBed,
+    // },
     {
         label: 'Tropical',
         icon: GiIsland,

@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home/Home/Home';
+import RoomsDataProvider from './provider/RoomsDataProvider';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <RoomsDataProvider>
     <RouterProvider router={router} />
+    </RoomsDataProvider>
   </React.StrictMode>,
 )
