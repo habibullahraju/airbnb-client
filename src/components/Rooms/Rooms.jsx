@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import Container from "../container/container";
 import Card from "./Card";
 import { useSearchParams } from "react-router-dom";
@@ -10,6 +10,7 @@ import Loader from "../Loader/Loader";
 const Rooms = () => {
     const {allRooms, setAllRooms} = useContext(ROOMS_CONTEXTS)
     
+    // eslint-disable-next-line no-unused-vars
     const [params , setParams] = useSearchParams()
     const categoryValue = params.get('category')
     useEffect(()=>{
