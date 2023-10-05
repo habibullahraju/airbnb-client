@@ -4,6 +4,7 @@ import CategoryBox from "./CategoryBox";
 import filterIcon from "../../assets/filterIcon.jpg"
 import { useState } from "react";
 import FilterModals from "../FilterModal/FilterModals";
+import DisplayTotalBeforeTaxes from "../DisplayTotalBeforeTaxes/DisplayTotalBeforeTaxes";
 
 
 const Categories = () => {
@@ -16,17 +17,18 @@ const Categories = () => {
 
                 ))}
                 <button onClick={()=>setIsOpenFilterModal(true)} className="btn lowercase mr-1 md:mr-0 text-sm btn-md"><img width={20} src={filterIcon} alt="" />Filter</button>
-                <button className="btn lowercase"><div className="form-control">
-                    <label className="label cursor-pointer">
-                        <span className="label-text  mr-2">Display total before taxes</span>
-                        <input type="checkbox" className="toggle" />
-                    </label>
-                </div></button>
+                <div className="flex gap-2 justify-center items-center border py-3 rounded-lg bg-gray-100 hover:bg-gray-200 px-2">
+                <span className="hidden lg:block">Display Total Before Taxes</span> 
+                <div className=" flex  lowercase">
+                    <div><DisplayTotalBeforeTaxes></DisplayTotalBeforeTaxes></div>
+                    </div>
+                </div>
                      <FilterModals 
                      isOpenFilterModal={isOpenFilterModal}
                      setIsOpenFilterModal={setIsOpenFilterModal}
                      ></FilterModals>   
             </div>
+            
         </Container>
     );
 };

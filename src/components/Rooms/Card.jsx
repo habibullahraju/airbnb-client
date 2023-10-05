@@ -1,6 +1,10 @@
+import { useContext } from 'react'
 import HeartButton from '../button/HeartButton'
+import { ROOMS_CONTEXTS } from '../../provider/RoomsDataProvider'
 
 const Card = ({room}) => {
+  const {displayBeforeTexes} = useContext(ROOMS_CONTEXTS)
+  console.log(displayBeforeTexes);
   return (
     <div className='col-span-1 cursor-pointer group'>
       <div className='flex flex-col gap-2 w-full'>
