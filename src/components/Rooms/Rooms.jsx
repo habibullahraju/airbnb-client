@@ -14,7 +14,7 @@ const Rooms = () => {
     const [params , setParams] = useSearchParams()
     const categoryValue = params.get('category')
     useEffect(()=>{
-        fetch("https://airbnb-server-pelkav7q2-habibullahraju.vercel.app/all-rooms")
+        fetch("https://airbnb-server-n4nb0szc1-habibullahraju.vercel.app/all-rooms")
         .then(res => res.json())
         .then(data => {
             if (categoryValue && categoryValue !== "All") {

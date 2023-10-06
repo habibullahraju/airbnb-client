@@ -80,7 +80,7 @@ const FilterModals = ({ isOpenFilterModal, setIsOpenFilterModal }) => {
     
 
     useEffect(()=>{
-        fetch(`https://airbnb-server-pelkav7q2-habibullahraju.vercel.app/filter?activePlaceType=${activePlaceType}&minValue=${rangMinValue}&maxValue=${rangeMaxValue}&beds=${beds}&bathrooms=${bathrooms}&homeProperty=${homeProperty}&apartmentProperty=${apartmentProperty}&guestHouseProperty=${guestHouseProperty}`)
+        fetch(`https://airbnb-server-n4nb0szc1-habibullahraju.vercel.app/filter?activePlaceType=${activePlaceType}&minValue=${rangMinValue}&maxValue=${rangeMaxValue}&beds=${beds}&bathrooms=${bathrooms}&homeProperty=${homeProperty}&apartmentProperty=${apartmentProperty}&guestHouseProperty=${guestHouseProperty}`)
         .then(res => res.json())
         .then(data => setFilteredData(data))
     },[activePlaceType, rangMinValue,rangeMaxValue,beds,bathrooms,homeProperty,apartmentProperty,guestHouseProperty])

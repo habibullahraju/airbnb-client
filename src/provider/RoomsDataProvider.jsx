@@ -9,7 +9,7 @@ const RoomsDataProvider = ({children}) => {
     const [displayBeforeTexes, setDisplayBeforeTexes] = useState(null)
 
     useEffect(()=>{
-        fetch("https://airbnb-server-pelkav7q2-habibullahraju.vercel.app/all-rooms")
+        fetch("https://airbnb-server-n4nb0szc1-habibullahraju.vercel.app/all-rooms")
         .then(res => res.json())
         .then(data => setAllRooms(data))
     },[])

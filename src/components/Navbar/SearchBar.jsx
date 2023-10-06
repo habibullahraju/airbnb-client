@@ -60,7 +60,7 @@ const SearchBar = () => {
   
 
   const handleSearch = () => {
-    fetch(`https://airbnb-server-pelkav7q2-habibullahraju.vercel.app/search?location=${searchLocation}&guests=${guests}&infants=${infants}&pets=${pets}&dateRange=${dateRange}`)
+    fetch(`https://airbnb-server-n4nb0szc1-habibullahraju.vercel.app/search?location=${searchLocation}&guests=${guests}&infants=${infants}&pets=${pets}&dateRange=${dateRange}`)
       .then(res => res.json())
       .then(data => {
         setAllRooms(data)
