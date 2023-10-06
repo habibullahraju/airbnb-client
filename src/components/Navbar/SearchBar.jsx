@@ -68,7 +68,7 @@ const SearchBar = () => {
       })
   }
   return (
-    <div>
+    <div className="w-full sm:w-auto">
       {openDetailNav ? <div>
         <ul data-aos="zoom-in" data-aos-delay="100" data-aos-duration="100" className="flex  gap-8  pt-3 pb-1">
           <li className="text-gray-800 cursor-pointer pb-2 border-b-2 border-gray-800">
@@ -344,12 +344,12 @@ const SearchBar = () => {
             )}
           </div>
         </div>
-      </div> : <div onClick={() => setOpenDetailNav(true)} className="md:ml-20" >
+      </div> : <div onClick={() => setOpenDetailNav(true)} className="md:ml-20 " >
         <div className='border-[1px] w-full md:w-auto py-[7px] rounded-full shadow hover:shadow-md  transition cursor-pointer'>
           <div className='flex w-full flex-row items-center justify-between'>
-            <div className='text-sm font-semibold px-5'>Anywhere</div>
+            <div className='text-sm l font-semibold px-5'>Anywhere</div>
 
-            <div className=' sm:block text-sm font-semibold px-5 border-x-[1px] flex-1 text-center'>Any week</div>
+            <div className='hidden sm:block text-sm font-semibold px-5 border-x-[1px] flex-1 text-center'>Any week</div>
 
             <div className='text-sm pl-5  pr-2 text-gray-600 flex flex-row items-center gap-3'>
               <div className='hidden sm:block'> guests</div>
