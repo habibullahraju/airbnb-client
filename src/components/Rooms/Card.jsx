@@ -15,11 +15,7 @@ const Card = ({room}) => {
 
     const startDate = new Date(startDateStr);
     const endDate = new Date(endDateStr);
-
-    // Calculate the difference in milliseconds
     const differenceInMilliseconds = endDate - startDate;
-
-    // Convert milliseconds to days (1 day = 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
     const differenceInDays = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24));
 
     setDifferenceInDays(differenceInDays);
