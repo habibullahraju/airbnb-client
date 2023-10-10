@@ -13,8 +13,7 @@ AOS.init();
 
 const SearchBar = () => {
   const [detailNavOption, setDetailNavOption] = useState("")
-  const [openDetailNav, setOpenDetailNav] = useState(false)
-  const { setAllRooms } = useContext(ROOMS_CONTEXTS)
+  const { setAllRooms, openDetailNav, setOpenDetailNav } = useContext(ROOMS_CONTEXTS)
   const [searchLocation, setSearchLocation] = useState('')
   const [adults, setAdults] = useState(0)
   const [children, setChildren] = useState(0)
@@ -22,6 +21,8 @@ const SearchBar = () => {
   const [pets, setPets] = useState(0)
   let guests = adults + children;
   const navigate = useNavigate()
+
+  
 
   const [dateChanged, setDateChanged] = useState(false)
   const [date, setDate] = useState([{
@@ -33,6 +34,7 @@ const SearchBar = () => {
   const checkOut = format(date[0].endDate, 'MMM d, yyyy')
   const dateRange = `${checkIn} - ${checkOut}`
 
+
   if (openDetailNav) {
     document.body.style.backgroundColor = '#ede6e6'
   }
@@ -40,6 +42,11 @@ const SearchBar = () => {
     document.body.style.backgroundColor = 'white'
   }
 
+  const today = new Date();
+const options = { year: 'numeric', month: 'short', day: 'numeric' };
+const formattedDate = today.toLocaleDateString('en-US', options);
+
+  
 
   const handleResetGuest = () => {
     setAdults(0);
@@ -55,21 +62,26 @@ const SearchBar = () => {
     
     window.addEventListener('scroll', handleScroll);
     
+    
+
+   
 
   }, []);
+
+
   
 
   const handleSearch = () => {
-    fetch(`https://airbnb-server-n4nb0szc1-habibullahraju.vercel.app/search?location=${searchLocation}&guests=${guests}&infants=${infants}&pets=${pets}&dateRange=${dateRange}`)
+    fetch(`http://localhost:5000/search?location=${searchLocation}&guests=${guests}&infants=${infants}&pets=${pets}&dateRange=${dateRange}`)
       .then(res => res.json())
       .then(data => {
-        setAllRooms(data)
+        setAllRooms(data);
         navigate("/?result")
       })
   }
   return (
-    <div className="w-full sm:w-auto">
-      {openDetailNav ? <div>
+    <div className="w-full sm:w-auto ">
+      {openDetailNav ? <div >
         <ul data-aos="zoom-in" data-aos-delay="100" data-aos-duration="100" className="flex  gap-8  pt-3 pb-1">
           <li className="text-gray-800 cursor-pointer pb-2 border-b-2 border-gray-800">
             Stays
@@ -82,7 +94,7 @@ const SearchBar = () => {
           </li>
         </ul>
 
-        <div data-aos="fade-down" data-aos-duration="200" data-aos-easing="ease-in-out" className="absolute left-0 right-0 top-[80px] flex justify-center bg-white pb-4">
+        <div  data-aos="fade-down" data-aos-duration="200" data-aos-easing="ease-in-out" className="absolute left-0 right-0 top-[80px] flex justify-center bg-white pb-4">
           <div
             className={`relative w-[800px] rounded-full flex items-center justify-between border ${openDetailNav ? "bg-gray-100" : "bg-white"
               }`}
@@ -129,7 +141,7 @@ const SearchBar = () => {
                 }`}
             >
               <p className="font-medium">Check in</p>
-              <p className="text-gray-400">Add dates</p>
+              <p className="text-gray-400">{checkIn ==formattedDate? "add date": format(date[0].startDate, 'd MMM')}</p>
 
             </div>
 
@@ -143,7 +155,7 @@ const SearchBar = () => {
                 }`}
             >
               <p className="font-medium">Check out</p>
-              <p className="text-gray-400">Add dates</p>
+              <p className="text-gray-400">{checkOut ==formattedDate? "add date": format(date[0].endDate, 'd MMM')}</p>
             </div>
 
             <div className="h-8 w-[1px] bg-gray-300"></div>
@@ -344,15 +356,15 @@ const SearchBar = () => {
             )}
           </div>
         </div>
-      </div> : <div onClick={() => setOpenDetailNav(true)} className="md:ml-20 " >
+      </div> : <div onClick={() => setOpenDetailNav(true)} className="md:ml-20  " >
         <div className='border-[1px] w-full md:w-auto py-[7px] rounded-full shadow hover:shadow-md  transition cursor-pointer'>
           <div className='flex w-full flex-row items-center justify-between'>
-            <div className='text-sm l font-semibold px-5'>Anywhere</div>
+            <div className='text-sm l font-semibold px-5'>{searchLocation? searchLocation: "Anywhere"}</div>
 
-            <div className='hidden sm:block text-sm font-semibold px-5 border-x-[1px] flex-1 text-center'>Any week</div>
+            <div className='hidden sm:block text-sm font-semibold px-5 border-x-[1px] flex-1 text-center'>{checkIn == formattedDate? "Any Week": format(date[0].startDate, 'd MMM')}{checkOut ==formattedDate? "":  <p>{format(date[0].endDate, 'd MMM')}</p>}</div>
 
             <div className='text-sm pl-5  pr-2 text-gray-600 flex flex-row items-center gap-3'>
-              <div className='hidden sm:block'> guests</div>
+              <div className='hidden sm:block'> {guests ==0? "guests":  <span>{guests} guests</span>}</div>
               <div className='p-2 bg-rose-500 rounded-full text-white'>
                 <BiSearch size={18} />
               </div>

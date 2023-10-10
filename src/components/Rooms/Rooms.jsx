@@ -8,7 +8,7 @@ import Loader from "../Loader/Loader";
 
 
 const Rooms = () => {
-    const {allRooms, setAllRooms} = useContext(ROOMS_CONTEXTS)
+    const {allRooms, setAllRooms , setOpenDetailNav} = useContext(ROOMS_CONTEXTS)
     
     // eslint-disable-next-line no-unused-vars
     const [params , setParams] = useSearchParams()
@@ -29,10 +29,13 @@ const Rooms = () => {
         
      
     },[categoryValue,])
+    const handleCloseDetailsNav = ()=>{
+        setOpenDetailNav(false);
+    }
     return (
         <Container>
 
-            {allRooms? <div className="pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 xl:grid-cols-5">
+            {allRooms? <div onClick={handleCloseDetailsNav} className="pt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 xl:grid-cols-5">
             {
                 allRooms?.map((room,index)=>(
                     <Card key={index} room={room}></Card>
