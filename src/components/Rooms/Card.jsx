@@ -2,6 +2,7 @@
 import { useContext, useEffect, useState } from 'react'
 import HeartButton from '../button/HeartButton'
 import { ROOMS_CONTEXTS } from '../../provider/RoomsDataProvider'
+import Swipers from './Swipers'
 
 const Card = ({room}) => {
   const {displayBeforeTexes} = useContext(ROOMS_CONTEXTS)
@@ -33,7 +34,7 @@ const Card = ({room}) => {
             rounded-xl
           '
         >
-          <img
+          {/* <img
             className='
               object-cover 
               h-full 
@@ -43,7 +44,16 @@ const Card = ({room}) => {
             '
             src={room?.image}
             alt='Room'
-          />
+          /> */}
+          <div className='
+              object-cover 
+              h-full 
+              w-full 
+              group-hover:scale-110 
+              transition
+            '>
+                <Swipers image2={room?.image2} image1={room?.image}></Swipers>
+          </div>
           <div
             className='
             absolute

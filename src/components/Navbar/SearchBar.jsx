@@ -1,9 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import { BiSearch } from "react-icons/bi";
+import { BiCurrentLocation, BiLocationPlus, BiSearch } from "react-icons/bi";
 import { HiOutlineXMark } from "react-icons/hi2";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import { format } from "date-fns";
 import DatePicker from "../DatePicker/DatePicker";
+import { FaLocationDot } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ROOMS_CONTEXTS } from "../../provider/RoomsDataProvider";
@@ -13,7 +14,7 @@ AOS.init();
 
 const SearchBar = () => {
   const [detailNavOption, setDetailNavOption] = useState("")
-  const { setAllRooms, openDetailNav, setOpenDetailNav } = useContext(ROOMS_CONTEXTS)
+  const {allRooms, setAllRooms, openDetailNav, setOpenDetailNav } = useContext(ROOMS_CONTEXTS)
   const [searchLocation, setSearchLocation] = useState('')
   const [adults, setAdults] = useState(0)
   const [children, setChildren] = useState(0)
@@ -68,11 +69,16 @@ const formattedDate = today.toLocaleDateString('en-US', options);
 
   }, []);
 
+  const handleSetSearchValue = (value) => {
+    setSearchLocation(value)
+  };
+
+
 
   
 
   const handleSearch = () => {
-    fetch(`http://localhost:5000/search?location=${searchLocation}&guests=${guests}&infants=${infants}&pets=${pets}&dateRange=${dateRange}`)
+    fetch(`https://airbnb-server-dn4czmnee-habibullahraju.vercel.app/search?location=${searchLocation}&guests=${guests}&infants=${infants}&pets=${pets}&dateRange=${dateRange}`)
       .then(res => res.json())
       .then(data => {
         setAllRooms(data);
@@ -129,7 +135,18 @@ const formattedDate = today.toLocaleDateString('en-US', options);
                 placeholder="Search destinations"
                 value={searchLocation}
               />
+              <div className="absolute bg-white  pt-0 top-14 w-5/6">
+                  {allRooms?.filter(item=>{
+                    const searchValue = searchLocation.toLowerCase();
+                    const serchTerms = item.location.toLowerCase();
+                    return serchTerms && serchTerms.startsWith(searchValue) && serchTerms !== searchValue
+                  })
+                  .map(item => <div className="flex pl-2 text-lg mt-1 rounded-md hover:bg-gray-200 gap-2 justify-start items-center" onClick={()=>handleSetSearchValue(item.location)} key={item._id}>
+                   <div className="py-2 mb-1 bg-gray-300 mt-1 px-2 rounded-md"><FaLocationDot></FaLocationDot></div> <div  >{item?.location}</div>
+                  </div>)}
+              </div>
             </div>
+            
 
             <div className="h-8 w-[1px] bg-gray-300"></div>
 

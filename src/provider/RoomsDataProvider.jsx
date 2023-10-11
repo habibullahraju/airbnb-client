@@ -11,7 +11,7 @@ const RoomsDataProvider = ({children}) => {
     const [openDetailNav, setOpenDetailNav] = useState(false)
 
     useEffect(()=>{
-        fetch("https://airbnb-server-n4nb0szc1-habibullahraju.vercel.app/all-rooms")
+        fetch("https://airbnb-server-dn4czmnee-habibullahraju.vercel.app/all-rooms")
         .then(res => res.json())
         .then(data => setAllRooms(data))
     },[reFetch])
